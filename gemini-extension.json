@@ -1,0 +1,23 @@
+{
+  "name": "reddit-posts-search-comments",
+  "version": "1.0.0",
+  "description": "Reddit subreddit posts, keyword search with date ranges, full comment threads and user posts. Hosted MCP server, bring your MCPize key.",
+  "mcpServers": {
+    "reddit-posts-search-comments": {
+      "httpUrl": "https://reddit-posts-search-comments.mcpize.run/mcp",
+      "headers": {
+        "Authorization": "Bearer ${MCPIZE_API_KEY}"
+      },
+      "timeout": 120000
+    }
+  },
+  "contextFileName": "GEMINI.md",
+  "settings": [
+    {
+      "name": "MCPize API key",
+      "description": "Your key for Reddit: Posts, Search, Comments & History. Subscribe on MCPize (Free plan available) and copy the key from the server page.",
+      "envVar": "MCPIZE_API_KEY",
+      "sensitive": true
+    }
+  ]
+}
